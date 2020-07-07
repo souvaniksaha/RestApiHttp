@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
         body = Buffer.concat(body).toString();
         console.log(body);
     });
-    
+
     res.end(JSON.stringify({
         success: true,
         data: heroList
